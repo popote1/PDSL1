@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Popote\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Popote\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_PDLS1-BulletSheald.859482567.00" t="ExcludeRecursive" />
+    <e p="E:\ESA Game\-cours-GameDesign\PDLS\PDLS1-BulletSheald" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scriptes" t="Include">
+          <e p="BouclierScripte.cs" t="Include" />
+          <e p="BulletScripte.cs" t="Include" />
+          <e p="CharacterController2D.cs" t="Include" />
+          <e p="EnnemiScripte.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="PowerUpScripte.cs" t="Include" />
+          <e p="ShealdScripte.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="PDLS1-BulletSheald.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
