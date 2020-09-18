@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPannel;
 
     public GameObject Ennemi;
+    [Header("Musique")] public AudioClip MainTheme;
+    public AudioClip EndTheme;
 
     [Header("spawnZones")] public GameObject Spawnzone1;
     public GameObject Spawnzone2;
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour
     public Vector2 SpawnZonemilite2;
     public Vector2 SpawnZonemilite3;
     public Vector2 SpawnZonemilite4;
+
+    [Header("Animation")] public LeanTweenType easeType;
     private int _score = 0;
     private bool _bouncestrick;
     private int _multipieur;
@@ -198,7 +202,10 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         GameOverPannel.SetActive(true);
+        Camera.main.gameObject.GetComponent<AudioSource>().clip = EndTheme;
+        Camera.main.gameObject.GetComponent<AudioSource>().Play();
     }
+    
     public void UIRestartLVL()
     {
         SceneManager.LoadScene(0);
