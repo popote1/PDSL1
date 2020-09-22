@@ -18,7 +18,7 @@ public class PowerUpScripte : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    /*private void OnCollisionEnter2D(Collider2D other)
     {
         Debug.Log(("powerUpCollision"));
         if (other.transform.CompareTag("Player"))
@@ -31,7 +31,16 @@ public class PowerUpScripte : MonoBehaviour
             other.gameObject.GetComponent<ShealdScripte>().shealdChargeUp(ShealdChargeValue);
             Destroy(gameObject);
         }
-    }
+      
+    }*/
 
-   
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            other.transform.parent.GetComponentInChildren<ShealdScripte>().shealdChargeUp(ShealdChargeValue);
+            Destroy(gameObject);
+            Debug.Log("touvher !");
+        }
+    }
 }

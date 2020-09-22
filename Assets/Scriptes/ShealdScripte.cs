@@ -10,6 +10,7 @@ public class ShealdScripte : MonoBehaviour
     public GameObject Sheald;
     public float ShealdloadValue;
     public float ImpactCost;
+    private bool _shealdIsActive = true;
     [HideInInspector]public float _shealdValue;
 
     private void Start()
@@ -29,17 +30,19 @@ public class ShealdScripte : MonoBehaviour
     {
         Sheald.GetComponent<MeshRenderer>().enabled = false;
         Sheald.GetComponent<BoxCollider2D>().enabled = false;
+        _shealdIsActive = false;
     }
 
     private void ShealdON()
     {
         Sheald.GetComponent<MeshRenderer>().enabled = true;
         Sheald.GetComponent<BoxCollider2D>().enabled = true;
+        _shealdIsActive=true;
     }
 
     public void shealdChargeUp(int charge)
     {
-        if (!Sheald.active)  ShealdON();
+        if (!_shealdIsActive)  ShealdON();
         _shealdValue = Mathf.Clamp(_shealdValue + charge, 0, ShealdloadValue);
     }
 

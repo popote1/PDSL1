@@ -14,6 +14,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scriptes/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptes/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptes/PowerUpScripte.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scriptes/ShealdScripte.cs" />
       </list>
     </option>
   </component>
@@ -57,7 +60,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600349707354</updated>
       <workItem from="1600349722060" duration="28000" />
-      <workItem from="1600461228807" duration="2419000" />
+      <workItem from="1600461228807" duration="2507000" />
+      <workItem from="1600549171294" duration="2416000" />
     </task>
     <servers />
   </component>

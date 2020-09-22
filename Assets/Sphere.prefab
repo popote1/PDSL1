@@ -58,10 +58,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2f47259b334367441b5c3d09a2fc5e19, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &884887988315593807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -123,3 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a4ceb1f48d01342816d7bb9c3bfec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PSBulletEnd: {fileID: 0}

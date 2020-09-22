@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveVector = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0) * Time.deltaTime;
         cc.Move(moveVector * MoveSpeed);
+        transform.position = new Vector3( Mathf.Clamp(transform.position.x,GaucheBas.x, DroitHaut.x),Mathf.Clamp(transform.position.y,GaucheBas.y, DroitHaut.y),0);
 
         /*float rotationAdd = Input.GetAxisRaw("Mouse X");
         transform.eulerAngles = transform.eulerAngles + new Vector3(0,0, rotationAdd * RotationSpeed * Time.deltaTime);
